@@ -1,0 +1,1 @@
+property named "name" equals "John"
