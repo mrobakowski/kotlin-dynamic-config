@@ -5,6 +5,6 @@ import org.jetbrains.kotlin.script.ScriptTemplateDefinition
 import org.networkedassets.kdc.api.ConfigBuilder
 
 @ScriptTemplateDefinition(resolver = ConfigScriptDependenciesResolver::class)
-open class ConfigScriptTemplate(val cb: ConfigBuilderImpl) : ConfigBuilder by cb
+open class ConfigScriptTemplate(val configBuilder: ConfigBuilderImpl) : ConfigBuilder by configBuilder
 
 object ConfigScriptDefinition : KotlinScriptDefinitionFromAnnotatedTemplate(ConfigScriptTemplate::class)
